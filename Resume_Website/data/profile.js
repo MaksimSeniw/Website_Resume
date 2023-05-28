@@ -28,7 +28,7 @@ const profileData = {
   skills: [
     {
       category: "Programming Languages",
-      topics: ["TypeScript", "JavaScript" , "C++", "Python", "Scala"]
+      topics: ["TypeScript", "JavaScript" , "C++", "Python", "HTML", "CSS"]
     },
     {
       category: "Relevant Classes Taken",
@@ -79,7 +79,7 @@ const profileData = {
       date: "Fall 2021",
       details: [
         `Assisted the coding team in STEM BEST Robotics 
-        through writing segments of our robot’s code, in 
+        through writing segments of our robot's code, in 
         Python, that would help it navigate various obstacles 
         set throughout the competition course.`
       ]

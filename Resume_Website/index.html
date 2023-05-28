@@ -18,6 +18,15 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" type="text/css" href="assets/css/index.css" />
+    <link rel='stylesheet' href='../Resume_Website/Fun_Button/button.css'>
+    <style>
+    .center {
+      margin: 0;
+      position: absolute;
+      left: 50%;
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+    }</style>
   </head>
 
   <body>
@@ -132,6 +141,29 @@
         </div>
         <div class="cat-list-body">
           <ul id="experienceList"></ul>
+        </div>
+      </section>
+      
+      <!--Fun Stuff section-->
+      <section class="info-row">
+        <div class="cat-header">
+          <span class="cat-indicator">
+            <i class="fas fa-code" aria-hidden="true"></i>
+          </span>
+          <span class="cat-title">Other Fun Stuff</span>
+        </div>
+        <div class="cat-list-body">
+          <br></br>
+          <div class="center">
+          <button id="mainButton" onclick="changeColor()">Click Me! (Not on Mobile Devices)</button>
+          </div>
+          <script>
+              function changeColor()
+              {
+                  var randomColor = Math.floor(Math.random()*16777215).toString(16);
+                  document.body.style.backgroundColor= '#' + randomColor;
+              }
+          </script>
         </div>
       </section>
 

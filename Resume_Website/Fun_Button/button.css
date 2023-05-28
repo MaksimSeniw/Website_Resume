@@ -1,0 +1,27 @@
+/* #mainButton{ Hidden button
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  color: #fff;
+  background-color: white;
+  border: 5px black;
+  transition-duration: 0.4s;
+  }
+#mainButton:hover{
+  background-color: black; 
+  color: white;
+} */
+#mainButton{ 
+  background-color:#FFFFFF; 
+  border: none;
+  color: none;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  border: 1px solid black;
+  transition-duration: 0.4s;
+  }
