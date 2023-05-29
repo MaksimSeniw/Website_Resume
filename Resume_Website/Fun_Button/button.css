@@ -8,11 +8,11 @@
   background-color: white;
   border: 5px black;
   transition-duration: 0.4s;
-  }
+  }*/
 #mainButton:hover{
   background-color: black; 
   color: white;
-} */
+} 
 #mainButton{ 
   background-color:#FFFFFF; 
   border: none;

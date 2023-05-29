@@ -85,7 +85,7 @@ const profileData = {
       ]
     },
     {
-      organization: "Best Robotcs",
+      organization: "BEST Robotics",
       title: `Presentation and Marketing Lead`,
       date: "Fall 2021",
       details: [
