@@ -42,6 +42,7 @@ const profileData = {
     {
       category: "Misc.",
       topics: [
+        "Familiar with using Github and Branch Management for Working in Teams or on Personal Projects",
         "Conversational in Spanish",
         "Basic Proficency in Russian",
       ]
