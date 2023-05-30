@@ -42,8 +42,8 @@ const profileData = {
     {
       category: "Misc.",
       topics: [
-        "Familiar with using Github and Branch Management for Working in Teams or on Personal Projects",
-        "Familiar with C++'s Various Data Structures and their Respective Advantages/Disadvantages",
+        "Familiar with using GH's Repo System and Branch Management for Working in Teams or on Personal Projects",
+        "Familiar with C++'s Various Data Structures and their Respective Pros/Cons",
         "Conversational in Spanish",
         "Basic Proficency in Russian",
       ]
