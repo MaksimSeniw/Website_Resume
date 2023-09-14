@@ -15,7 +15,7 @@ const profileData = {
     { title: "Resume", src: "https://shorturl.at/lnGO5" },
     { title: "Github", src: "https://github.com/MaksimSeniw" },
     { title: "LinkedIn", src: "https://www.linkedin.com/in/maks-seniw" },
-    { title: "Repo for This Page", src: "https://shorturl.at/adEUY" },
+    { title: "Repo for This Page", src: "https://github.com/MaksimSeniw/Website_Resume" },
   ],
   education: [
     {
