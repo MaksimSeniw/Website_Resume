@@ -12,10 +12,10 @@ const profileData = {
     }
   },
   links: [
-    { title: "Resume", src: "https://shorturl.at/lnGO5" },
-    { title: "Github", src: "https://github.com/MaksimSeniw" },
-    { title: "LinkedIn", src: "https://www.linkedin.com/in/maks-seniw" },
-    { title: "Repo for This Page", src: "https://github.com/MaksimSeniw/Website_Resume" },
+    { title: "Github", src: "github.com/MaksimSeniw" },
+    { title: "LinkedIn", src: "linkedin.com/in/maks-seniw" },
+    { title: "Repo for This Page", src: "github.com/MaksimSeniw/Website_Resume" },
+    { title: "Resume", src: "docs.google.com/document/d/1ia7jwSpx0FrJqfIF4-RZ4gADxFshyJY_/edit?usp=sharing&ouid=102977937959230597711&rtpof=true&sd=true" },
   ],
   education: [
     {
