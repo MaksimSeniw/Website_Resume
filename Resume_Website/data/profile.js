@@ -15,7 +15,7 @@ const profileData = {
     { title: "Github", src: "github.com/MaksimSeniw" },
     { title: "LinkedIn", src: "linkedin.com/in/maks-seniw" },
     { title: "Repo for This Page", src: "github.com/MaksimSeniw/Website_Resume" },
-    { title: "Resume", src: "docs.google.com/document/d/1ia7jwSpx0FrJqfIF4-RZ4gADxFshyJY_/edit?usp=sharing&ouid=102977937959230597711&rtpof=true&sd=true" },
+    { title: "Resume", src: "https://shorturl.at/brz09" },
   ],
   education: [
     {
@@ -28,7 +28,7 @@ const profileData = {
   skills: [
     {
       category: "Programming Languages",
-      topics: ["TypeScript", "JavaScript" , "C++", "Python", "HTML", "CSS"]
+      topics: ["TypeScript", "JavaScript" , "C++", "Python", "HTML", "CSS", "LaTex", "Scala"]
     },
     {
       category: "Relevant Classes Taken",
@@ -43,6 +43,8 @@ const profileData = {
       category: "Misc.",
       topics: [
         "Familiar with using GH's Repo System and Branch Management for Working in Teams or on Personal Projects",
+        "Familar with Docker and its Containerization Structure and Use",
+        "Familiar with Git and its Massive Use to Organizations and Teams ",
         "Familiar with C++'s Various Data Structures and their Respective Pros/Cons",
         "Conversational in Spanish",
         "Basic Proficency in Russian",
