@@ -12,10 +12,10 @@ const profileData = {
     }
   },
   links: [
-    { title: "Github", src: "tinyurl.com/asvsfrrf" },
-    { title: "LinkedIn", src: "tinyurl.com/32udswtx" },
-    { title: "Repo for This Page", src: "tinyurl.com/2v8uderj" },
-    { title: "Resume", src: "tinyurl.com/575u3dj4" },
+    { title: "Github", src: "https://tinyurl.com/asvsfrrf" },
+    { title: "LinkedIn", src: "https://tinyurl.com/32udswtx" },
+    { title: "Repo for This Page", src: "https://tinyurl.com/2v8uderj" },
+    { title: "Resume", src: "https://tinyurl.com/575u3dj4" },
   ],
   education: [
     {
