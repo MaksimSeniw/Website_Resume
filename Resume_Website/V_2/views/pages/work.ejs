@@ -36,7 +36,7 @@ li {
 	--h: calc((var(--i) - 1) * (180 / var(--length)));
 	--c1: hsl(var(--h), 71%, var(--l));
 	--c2: hsl(var(--h), 71%, var(--l2));
-	
+	border-radius: .3rem;
 
 }
 
@@ -49,6 +49,9 @@ li::before {
 	top: 0;
 	left: 0;
 	background: linear-gradient(to right, var(--c1) var(--stop), var(--c2) var(--stop));
+	border-top-left-radius: .27rem;
+	border-top-right-radius: .27rem;
+
 }
 h2 {
 	display: flex;
@@ -80,10 +83,10 @@ h3::before {
 }
 
 @media (min-width: 40em) {
-	/* li {
-		margin: 3rem auto;
-		padding: 3rem 2rem 2rem;
-	} */
+	li {
+	border-radius:.3rem;
+
+	}
 
     h2 {
 		font-size: smaller;
@@ -102,7 +105,7 @@ h3::before {
 
 <main>
 	<ol style="--length: 3" role="list">
-		<li style="--i: 5; background-color: white; border-radius: .25rem; box-shadow: 0.1rem 0.1rem 1.5rem rgba(0, 0, 0, 0.3); 
+		<li style="--i: 5; background-color: white;  box-shadow: 0.1rem 0.1rem 1.5rem rgba(0, 0, 0, 0.3); 
 		padding: 2rem 1rem 1rem; margin: 2rem auto;	max-width: 45rem; 	position: relative; counter-increment: list;  ">
 			<h3>Buffalo Wild Wings</h3>
             <h2>Host and Server, (Spring 2022 - Fall 2022)            </h2>

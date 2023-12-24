@@ -15,10 +15,10 @@ body {
 	--brandColor: hsl(var(--h), 71%, var(--l));
 	font-family: Montserrat, sans-serif;
 	margin: 0;
-	background: #bdc3c7;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */}
-
+	background: #BBD2C5;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #536976, #BBD2C5);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #536976, #BBD2C5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
 p {
 	margin: 0;
 	line-height: 1.6;
@@ -37,7 +37,7 @@ li {
 	--h: calc((var(--i) - 1) * (180 / var(--length)));
 	--c1: hsl(var(--h), 71%, var(--l));
 	--c2: hsl(var(--h), 71%, var(--l2));
-	
+	border-radius: .3rem;
 
 }
 
@@ -50,8 +50,17 @@ li::before {
 	top: 0;
 	left: 0;
 	background: linear-gradient(to right, var(--c1) var(--stop), var(--c2) var(--stop));
-}
+	border-top-left-radius: .27rem;
+	border-top-right-radius: .27rem;
 
+}
+h2 {
+	display: flex;
+	align-items: baseline;
+	margin: 0 0 1rem;
+	color: rgb(70 70 70);
+    font-size: smaller;
+}
 h3 {
 	display: flex;
 	align-items: baseline;
@@ -75,10 +84,14 @@ h3::before {
 }
 
 @media (min-width: 40em) {
-	/* li {
-		margin: 3rem auto;
-		padding: 3rem 2rem 2rem;
-	} */
+	li {
+	border-radius:.3rem;
+
+	}
+
+    h2 {
+		font-size: smaller;
+	}
 	
 	h3 {
 		font-size: 2.25rem;
