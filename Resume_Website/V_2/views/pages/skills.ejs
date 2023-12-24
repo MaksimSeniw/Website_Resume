@@ -1,0 +1,150 @@
+<%- include ('../partials/head') %>
+<%- include ('../partials/navbar') %>
+<style>
+td {
+  transform-origin: center;
+  transition-property: transform;
+  transition-duration: 0.4s;
+  transition-timing-function: ease-in-out;
+}
+tr:hover td {
+  transform: scale(1.1);
+  background-color: grey;
+  font-weight: bolder;
+}
+
+* { box-sizing: border-box }
+
+table {
+  width: 90%;
+  text-align: left;
+  box-shadow: .1rem;
+  padding: 2rem 1rem 1rem; 
+  margin: 2rem auto;	
+  max-width: 45rem; 	
+  border-radius: .25rem;
+  border-color: black;
+}
+th, td {
+  padding: 0.5em;
+}
+th{
+    font-size: larger;
+    font-weight: bold;
+}
+tr:nth-child(even) {
+   background-color:rgba(0, 0, 0, 0.05);
+}
+
+body {
+  height: 100vh;
+  background: hsl(232, 22%, 90%);
+}
+
+body {
+  background: #DC2424;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #4A569D, #DC2424);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #4A569D, #DC2424); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+</style>
+<main>
+  <div style="overflow-x:auto;">
+    <div class="grid-container">
+    <table>
+        <thead>
+          <tr>
+            <th>Programming Languages</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>C++</td>
+          </tr>
+          <tr>
+            <td>JavaScript</td>
+          </tr>
+          <tr>
+            <td>EJS</td>
+          </tr>
+          <tr>
+            <td>SQL</td>
+          </tr>
+          <tr>
+            <td>Python</td>
+          </tr>
+          <tr>
+            <td>HTML</td>
+          </tr>
+          <tr>
+            <td>Scala</td>
+          </tr>
+        </tbody>
+      </table>
+      <table>
+        <thead>
+          <tr>
+            <th>Relevant Classes</th>
+            <th>Syllabus Link</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>CSCI 1300</td>
+            <td><a href="https://home.cs.colorado.edu/~mozer/Teaching/syllabi/csci1300/syllabus.html" target="_blank" rel="noopener noreferrer" >Syllabus</a></td>
+          </tr>
+          <tr>
+            <td>CSCI 2270</td>
+            <td><a href="https://www.colorado.edu/cs/cspb-2270-computer-science-2-data-structures" target="_blank" rel="noopener noreferrer" >Syllabus</a></td>
+          </tr>
+          <tr>
+            <td>CSCI 3308</td>
+            <td><a href="https://www.colorado.edu/cs/cspb-3308-software-development-methods-and-tools" target="_blank" rel="noopener noreferrer" >Syllabus</a></td>
+          </tr>
+          <tr>
+            <td>CSCI 2824</td>
+            <td><a href="https://www.colorado.edu/cs/cspb-2824-discrete-structures" target="_blank" rel="noopener noreferrer" >Syllabus</a></td>
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+    <table class="center">
+        <thead>
+          <tr>
+            <th>MISC</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Familiar with using GH's Repo System and Branch Management for Working in Teams or on Personal Projects</td>
+          </tr>
+          <tr>
+            <td>Familar with Docker and its Containerization Structure and Use
+            </td>
+          </tr>
+          <tr>
+            <td>Familiar with Git and its Massive Use to Organizations and Teams
+            </td>
+          </tr>
+          <tr>
+            <td>Familiar with C++'s Various Data Structures and their Respective Pros/Cons
+            </td>
+          </tr>
+          <tr>
+            <td>Conversational in Spanish
+            </td>
+          </tr>
+          <tr>
+            <td>Basic Proficency in Russian
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+</main>
