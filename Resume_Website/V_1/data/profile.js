@@ -28,15 +28,15 @@ const profileData = {
   skills: [
     {
       category: "Programming Languages",
-      topics: ["TypeScript", "JavaScript" , "C++", "Python", "HTML", "CSS", "LaTex", "Scala"]
+      topics: ["TypeScript", "JavaScript" , "C++", "Python", "HTML", "CSS", "LaTex", "Scala", "EJS", "SQL", "Node.js", "Yaml"]
     },
     {
       category: "Relevant Classes Taken",
       topics: [
         "CSCI 1300",
         "CSCI 2270",
-        "CSCI 3308 (Fall '23)",
-        "CSCI 2824 (Fall '23)",
+        "CSCI 3308",
+        "CSCI 2824",
       ]
     },
     {
@@ -53,6 +53,23 @@ const profileData = {
   ],
   projects: [
     {
+      title: "Hat Hub",
+      duration: "2023",
+      link: "https://github.com/MaksimSeniw/HatHub",
+      desc: `HatHub is a website immitating e-commerce with the sale of various hats. When the user 
+      loads up the website they will be prompted to login or register. If they are a new user
+      they will register; the data from that registration will be stored within the SQL database so the user
+      can login and have their profile created. Further, the user can add hats to their shopping cart and place an order.
+      They will then get an email confirmation sent to the email they registered with. Stylization was done with CSS.`
+    },
+    {
+      title: "Resume Website",
+      duration: "2023",
+      link: "https://github.com/MaksimSeniw/Website_Resume",
+      desc: `A personal website that I created to help inform others about
+      my skills and qualifications. Created using CSS, JS, and EJS.`
+    },
+    {
       title: "Hydration Tracker",
       duration: "2023",
       link: "https://github.com/MaksimSeniw/Hydration_Tracker.git",
@@ -67,6 +84,16 @@ const profileData = {
     },
   ],
   experiences: [
+    {
+      organization: "Take MAR",
+      title: `Intern`,
+      date: "January 2024 - Present",
+      details: [
+        `Assisted the orginization with a variety of items. Including various front end webpages, relevant to 
+        the organization, being created;
+        along with the creation and organisation of fundraising events.`
+      ]
+    },
     {
       organization: "Buffalo Wild Wings",
       title: `Host and Server`,
