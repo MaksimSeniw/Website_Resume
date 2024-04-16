@@ -16,12 +16,14 @@ app.get('/', function(req, res) {
     app.get('/skills', function(req, res) {
       res.render('pages/skills');
     });
-  
     app.get('/v1', function(req, res) {
       res.render('pages/v1');
     });
     app.get('/work', function(req, res) {
       res.render('pages/work');
+    });
+    app.get('/resume', function(req, res) {
+      res.render('pages/resume');
     });
 
 const PORT = process.env.PORT || 8080;
