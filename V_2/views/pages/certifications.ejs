@@ -1,0 +1,144 @@
+<%- include ('../partials/head') %>
+<%- include ('../partials/navbar') %>
+<!-- <link href="https://fonts.cdnfonts.com/css/marcellus" rel="stylesheet"> -->
+
+<style>
+/* @import url("https://fonts.googleapis.com/css?family=Montserrat:400,700"); */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	--h: 212deg;
+	--l: 43%;
+	--brandColor: hsl(var(--h), 71%, var(--l));
+	/* font-family: marcellus, serif , sans-serif; */
+	margin: 0;
+	background: #007991;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #78ffd6, #007991);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #78ffd6, #007991); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+p {
+	margin: 0;
+	line-height: 1.6;
+}
+
+ol {
+	list-style: none;
+	counter-reset: list;
+	padding: 0 1rem;
+}
+
+li {
+	--stop: calc(100% / var(--length) * var(--i));
+	--l: 62%;
+	--l2: 88%;
+	--h: calc((var(--i) - 1) * (180 / var(--length)));
+	--c1: hsl(var(--h), 71%, var(--l));
+	--c2: hsl(var(--h), 71%, var(--l2));
+	border-radius: .3rem;
+}
+
+li::before {
+	content: '';
+	display: block;
+	width: 100%;
+	height: 1rem;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: linear-gradient(to right, var(--c1) var(--stop), var(--c2) var(--stop));
+	border-top-left-radius: .27rem;
+	border-top-right-radius: .27rem;
+
+}
+h2 {
+	display: flex;
+	align-items: baseline;
+	margin: 0 0 1rem;
+	color: rgb(70 70 70);
+    font-size: smaller;
+}
+h3 {
+	display: flex;
+	align-items: baseline;
+	margin: 0 0 1rem;
+	color: rgb(70 70 70);
+}
+
+h3::before {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex: 0 0 auto;
+	margin-right: 1rem;
+	width: 3rem;
+	height: 3rem;
+	content: counter(list);
+	padding: 1rem;
+	border-radius: 50%;
+	background-color: var(--c1);
+	color: white;
+}
+
+@media (min-width: 40em) {
+	li {
+	border-radius:.3rem;
+
+	}
+
+    h2 {
+		font-size: smaller;
+	}
+	
+	h3 {
+		font-size: 2.25rem;
+		margin: 0 0 2rem;
+	}
+	
+	h3::before {
+		margin-right: 1.5rem;
+	}
+}
+</style>
+
+<main>
+	<ol style="--length: 3" role="list">
+		<li style="--i: 6; background-color: white;  box-shadow: 0.1rem 0.1rem 1.5rem rgba(0, 0, 0, 0.3); 
+		padding: 2rem 1rem 1rem; margin: 2rem auto;	max-width: 45rem; 	position: relative; counter-increment: list;  ">
+			<h3>J.P. Morgan Software Engineering Virtual Experience on Forage</h3>
+			<ul style="list-style-type:disc">
+            <li>
+                Set up a local dev environment by downloading the necessary files, tools and dependencies.
+            </li>
+            <li>
+                Fixed broken files in the repository to make web application output correctly.
+            </li>
+            <li>
+                Used JPMorgan Chase’s open source library called Perspective to generate a live graph that displays a data feed in a clear and 
+            </li>
+            </ul>
+			<br>
+			<a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/J.P.%20Morgan/R5iK7HMxJGBgaSbvk_J.P.%20Morgan_eNva4THny5EqjbWH9_1717024231470_completion_certificate.pdf" target="_blank" rel="noopener noreferrer" class="fa-solid fa-user" aria-hidden="true"> Certificate</a>
+		</li>
+		<li style="--i: 8; background-color: white;  box-shadow: 0.1rem 0.1rem 1.5rem rgba(0, 0, 0, 0.3); 
+		padding: 2rem 1rem 1rem; margin: 2rem auto;	max-width: 45rem; 	position: relative; counter-increment: list;  ">
+			<h3>Accenture North America Data Analytics and Visualization Job Simulation on Forage  </h3>
+			<ul style="list-style-type:disc">
+                <li>
+                    Completed a simulation focused on advising a hypothetical social media client  as a Data Analyst at Accenture
+                </li>
+                <li>
+                    Cleaned, modeled, and analyzed 7 datasets to uncover insights into content   trends to inform strategic decisions
+                </li>
+                <li>
+                    Prepared a PowerPoint deck and video presentation to communicate key insights for the client and internal stakeholders
+                </li>
+                </ul>
+			<br>
+			<a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/Accenture%20North%20America/hzmoNKtzvAzXsEqx8_Accenture%20North%20America_eNva4THny5EqjbWH9_1717112058648_completion_certificate.pdf" target="_blank" rel="noopener noreferrer" class="fa-solid fa-user" aria-hidden="true"> Certificate</a>
+		</li>
+	</ol>
+</main>

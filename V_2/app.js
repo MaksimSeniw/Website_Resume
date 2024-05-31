@@ -25,6 +25,9 @@ app.get('/', function(req, res) {
     app.get('/resume', function(req, res) {
       res.render('pages/resume');
     });
+    app.get('/certifications', function(req, res) {
+      res.render('pages/certifications');
+    });
 
 const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => {
