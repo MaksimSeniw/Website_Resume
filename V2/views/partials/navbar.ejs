@@ -14,22 +14,43 @@ header {
   position: sticky;
   top: 0;
   z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
 }
 
 nav {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 16px 20px;
+  flex: 1;
+  max-width: 800px;
+  margin-left: 20px;
   position: relative;
+}
+
+.name-container {
+  margin-right: 20px;
+  padding: 16px 0;
+}
+
+.name-display {
+  color: white;
+  font-weight: 600;
+  font-size: 1.3rem;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+}
+
+.name-display span {
+  color: #78ffd6;
+  font-weight: 500;
 }
 
 nav ul {
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding: 16px 0;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   gap: 12px;
 }
@@ -96,10 +117,6 @@ nav ul li a::after {
   background: transparent;
   border: none;
   padding: 8px;
-  position: absolute;
-  left: 10px;
-  top: 50%;
-  transform: translateY(-50%);
   z-index: 1001;
 }
 
@@ -108,7 +125,7 @@ nav ul li a::after {
   width: 28px;
   height: 3px;
   margin: 5px 0;
-  background-color: #0f172a;
+  background-color: #a4fee3;
   border-radius: 3px;
   transition: all 0.3s ease;
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
@@ -120,13 +137,17 @@ nav ul li a::after {
 
 @media screen and (max-width: 768px) {
   header {
-    background: transparent;
-    box-shadow: none;
+    padding: 10px;
+    justify-content: space-between;
+  }
+  
+  .name-container {
+    margin: 0;
+    padding: 5px 0;
   }
   
   nav {
-    background: transparent;
-    padding: 16px 10px;
+    margin-left: 0;
   }
   
   nav ul {
@@ -141,8 +162,9 @@ nav ul li a::after {
     box-shadow: -5px 0 15px rgba(0, 0, 0, 0.2);
     align-items: flex-start;
     padding-left: 30px;
-    padding-top: 20px;
+    padding-top: 60px;
     gap: 5px;
+    z-index: 1000;
   }
   
   nav ul.show {
@@ -163,12 +185,15 @@ nav ul li a::after {
   .hamburger {
     display: block;
     color: #a4fee3;
-    top: 25px;
   }
   
-.hamburger.active {
-  background-color: transparent; /* Remove background when menu is open */
-}
+  .hamburger.active {
+    position: fixed;
+    left: 15px;
+    top: 20px;
+    background-color: transparent; /* Remove background when menu is open */
+  }
+  
   .hamburger.active span:nth-child(1) {
     transform: translateY(8px) rotate(45deg);
   }
@@ -184,12 +209,13 @@ nav ul li a::after {
 </style>
 
 <header>
+  <button class="hamburger" onclick="toggleMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+  
   <nav>
-    <button class="hamburger" onclick="toggleMenu()">
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
     <ul id="menu">
       <li><a href="/home" class="active">Home</a></li>
       <li><a href="/work">Work Experience</a></li>
@@ -199,6 +225,10 @@ nav ul li a::after {
       <li><a href="/resume">Resume</a></li>
     </ul>
   </nav>
+  
+  <div class="name-container">
+    <div class="name-display"><span> MS <a href="https://github.com/MaksimSeniw"  target="_blank" rel="noopener noreferrer" class="fa fa-microchip" aria-hidden="true"></a></span></div>
+  </div>
 </header>
 
 <script>
