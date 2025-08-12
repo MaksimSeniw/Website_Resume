@@ -3,7 +3,7 @@
         "@google-cloud/storage": "^7.7.0",
         "css": "^3.0.0",
         "ejs": "^3.1.6",
-        "express": "^4.18.2"
+        "express": "^4.21.2"
     },
     "scripts": {
         "start": "node app.js"
