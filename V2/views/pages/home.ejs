@@ -1,137 +1,30 @@
 <%- include ('../partials/head') %>
 <%- include ('../partials/navbar') %>
-<link href="https://fonts.cdnfonts.com/css/marcellus" rel="stylesheet">
-
-<style>
-body{
-    background: #007991;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #78ffd6, #007991);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #78ffd6, #007991); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-}
-
-.card{
-    border:none;
-    position:relative;
-    overflow:hidden;
-    border-radius:8px;
-    cursor:pointer;
-    box-shadow: 0.1rem 0.1rem 1.5rem rgba(0, 0, 0, 0.3);
-
-}
-
-.card:before{
-    
-    content:"";
-    position:relative;
-    left:0;
-    top:0;
-    width:4px;
-    height:100%;
-    background-color:#E1BEE7;
-    transform:scaleY(1);
-    transition:all 0.5s;
-    transform-origin: bottom;
-
-}
-
-.card:after{
-    
-    content:"";
-    position:absolute;
-    left:0;
-    top:0;
-    width:4px;
-    height:100%;
-    background-color:#8E24AA;
-    transform:scaleY(0);
-    transition:all 0.5s;
-    transform-origin: bottom
-}
-
-.card:hover::after{
-    transform:scaleY(1);
-}
-
-
-.fonts{
-    font-size:13px;
-    font-weight:500;
-}
-
-.social-list{
-    display:flex;
-    list-style:none;
-    justify-content:center;
-    padding:0;
-}
-
-.social-list li{
-    padding:10px;
-    color:#8E24AA;
-    font-size:19px;
-}
-</style>
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebPage",
-  "@id": "https://maksimseniw.com#webpage",
-  "url": "https://maksimseniw.com",
-  "name": "Maksim Seniw - Computer Science Programmer",
-  "description": "CU Boulder Computer Science graduate specializing in network engineering, web development, and cybersecurity.",
-  "mainEntity": { "@id": "https://maksimseniw.com#person" }
-}
-</script>
-
 <main>
-<meta property="og:title" content="Maksim Seniw - Computer Science Programmer" />
-<meta property="og:description" content="CU Boulder Computer Science student and web developer with experience in SQL, Python, JavaScript, and more." />
-<meta property="og:type" content="profile" />
-<meta property="og:url" content="https://maksimseniw.com" />
-<meta property="og:image" content="https://i.ibb.co/QvFtmhft/rescaled.jpg"/>
-<meta property="og:image:width" content="800" />
-<meta property="og:image:height" content="800" />
-
-<!-- Additional standard meta tags -->
-<meta name="description" content="CU Boulder Computer Science student and web developer with experience in SQL, Python, JavaScript, and more." />
-<meta name="author" content="Maksim Seniw" />
     <div class="container mt-5">
-    
-        <div class="row d-flex justify-content-center">
-            
-            <div class="col-md-7">
-                
-                <div class="card p-3 py-4">
-                    
+        <div class="row d-flex justify-content-center">           
+            <div class="col-md-7">               
+                <div class="card p-3 py-4">                 
                     <div class="text-center">
                         <img src="https://i.ibb.co/QvFtmhft/rescaled.jpg" alt="rescaled" border="0"
                         width="125" class="rounded-circle">
-                    </div>
-                    
+                    </div>              
                     <div class="text-center mt-3">
                         <h5 style="font-weight:600;">Maksim Seniw</h5>
-                        <span>Computer Science Programmer </span>
+                        <span>Software Engineer and Release Manager </span>
                         
                         <div class="px-4 mt-1">
                             <p class="fonts">
-                                Hi! I am a recent graduate from CU Boulder, with a major in Computer Science and minor in Business. 
-                                I mainly focus and have plentiful experience in network engineering, web development, and cybersecurity. Experience gained from CU Boulder's wonderful classes, my personal coding projects, gained certifications, or  
-                                work experience.  From these, I have proficency in the following coding-related areas: 
-                                Python, C++, JavaScript, SQL/NoSQL, Docker, Node.js, 
+                                Hi! I am a Software Engineer at Spectrum and a recent graduate from CU Boulder.
+                                My proficiencys include, but are not limited to, Python,
+                                Flask, C++, JavaScript, SQL/NoSQL, Docker, Node.js, 
                                 Git/GitHub, various cybersecurity tools, REST APIs, 
-                                web development frameworks, system automation, vulnerability assessment, and 
+                                web development frameworks, JIRA, system automation, vulnerability assessment, and 
                                 full-stack project deployment. 
-                                The projects, certifications, and classes in which these skills are learned and used, are displayed throughout my website. 
-                                However, I’m actively seeking roles in network or software engineering to expand my impact while continuing to learn.
-                            </p>
-                            <!-- <p style="font-size: large;"><a href="https://docs.google.com/document/d/1ia7jwSpx0FrJqfIF4-RZ4gADxFshyJY_/edit?usp=sharing&ouid=102977937959230597711&rtpof=true&sd=true"
-                                target="_blank" rel="noopener noreferrer">Resume</a></p> -->
-                        
-                        </div>
-                        
-                         <ul class="social-list">
+                                My experience is displayed throughout this website in various pages.
+                            </p>                      
+                        </div>                       
+                            <ul class="social-list">
                             <li><a href="https://mail.google.com/mail/?view=cm&fs=1&to=maksimseniw@gmail.com"  target="_blank" rel="noopener noreferrer" class="fa fa-google" aria-hidden="true"></a></li>
                             <li><a href="https://www.linkedin.com/in/maksim-seniw/"  target="_blank" rel="noopener noreferrer" class="fa fa-linkedin" aria-hidden="true"></a></li>
                             <li><a href="https://github.com/MaksimSeniw"  target="_blank" rel="noopener noreferrer" class="fa fa-github" aria-hidden="true"></a></li>
@@ -143,4 +36,4 @@ background: linear-gradient(to right, #78ffd6, #007991); /* W3C, IE 10+/ Edge, F
             </div>
         </div>
     </div>
-    </main>
+</main>

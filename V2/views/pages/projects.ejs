@@ -1,124 +1,5 @@
 <%- include ('../partials/head') %>
 <%- include ('../partials/navbar2') %>
-<link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<style>
-
-* {
-	box-sizing: border-box;
-}
-
-body {
-	--h: 212deg;
-	--l: 43%;
-	--brandColor: hsl(var(--h), 71%, var(--l));
-	/* font-family: Open Sans; */
-	margin: 0;
-	background: #007991;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #78ffd6, #007991);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #78ffd6, #007991); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-}
-p {
-	margin: 0;
-	line-height: 1.6;
-}
-
-ol {
-	list-style: none;
-	counter-reset: list;
-	padding: 0 1rem;
-}
-
-li {
-	--stop: calc(100% / var(--length) * var(--i));
-	--l: 62%;
-	--l2: 88%;
-	--h: calc((var(--i) - 1) * (180 / var(--length)));
-	--c1: hsl(var(--h), 71%, var(--l));
-	--c2: hsl(var(--h), 71%, var(--l2));
-	border-radius: .3rem;
-
-}
-
-li::before {
-	content: '';
-	display: block;
-	width: 100%;
-	height: 1rem;
-	position: absolute;
-	top: 0;
-	left: 0;
-	background: linear-gradient(to right, var(--c1) var(--stop), var(--c2) var(--stop));
-	border-top-left-radius: .27rem;
-	border-top-right-radius: .27rem;
-
-}
-h2 {
-	display: flex;
-	align-items: baseline;
-	margin: 0 0 1rem;
-	color: rgb(70 70 70);
-    font-size: smaller;
-}
-h3 {
-	display: flex;
-	align-items: baseline;
-	margin: 0 0 1rem;
-	color: rgb(70 70 70);
-}
-
-h3::before {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex: 0 0 auto;
-	margin-right: 1rem;
-	width: 3rem;
-	height: 3rem;
-	content: counter(list);
-	padding: 1rem;
-	border-radius: 50%;
-	background-color: var(--c1);
-	color: white;
-}
-
-@media (min-width: 40em) {
-	li {
-	border-radius:.3rem;
-
-	}
-
-    h2 {
-		font-size: smaller;
-	}
-	
-	h3 {
-		font-size: 2.25rem;
-		margin: 0 0 2rem;
-	}
-	
-	h3::before {
-		margin-right: 1.5rem;
-	}
-}
-</style>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebPage",
-  "@id": "https://maksimseniw.com/projects#webpage",
-  "url": "https://maksimseniw.com/projects",
-  "name": "Projects - Maksim Seniw",
-  "description": "Portfolio and project work by Maksim Seniw including web development, cybersecurity, and software engineering projects.",
-  "about": { "@id": "https://maksimseniw.com#person" }
-}
-</script>
-
 
 <main>
 	<ol style="--length: 3" role="list">
@@ -130,10 +11,11 @@ h3::before {
 				the home page, which displays the top five rated sunsets, and login or register.
 				When logged in a user can upload a photo, edit their profile, view the ten newest sunsets, and 
 				rate sunsets. The backend is a postgresSQL database with JavaScript routing, the frontend is a combination of CSS stylization and EJS.
+				Currently not hosted live, but the code is available on my GitHub. 
 			</p>
 				<br>
 				<h2>Items Used: OOP, SQL, CSS, EJS, JS, HTML, Node.js</h2>
-				<a href="https://sunsetranker.onrender.com" target="_blank" rel="noopener noreferrer" class="fa fa-sun" aria-hidden="true"></a>
+				<a href="https://github.com/MaksimSeniw/SunsetRanker" target="_blank" rel="noopener noreferrer" class="fa fa-sun" aria-hidden="true"></a>
 		</li>
 		<li style="--i: 3; background-color: white; border-radius: .25rem; box-shadow: 0.1rem 0.1rem 1.5rem rgba(0, 0, 0, 0.3); 
 		padding: 2rem 1rem 1rem; margin: 2rem auto;	max-width: 45rem; 	position: relative; counter-increment: list;  ">
