@@ -19,7 +19,18 @@ jobs:
       - name: Setup gcloud
         uses: google-github-actions/setup-gcloud@v2
 
+      - run: sleep 10
+
       - name: Deploy
         run: |
+          set -e
+
           gcloud config set project ${{ secrets.GCP_PROJECT_ID }}
-          gcloud app deploy V2/app.yaml --quiet
+
+          for i in 1 2 3; do
+            gcloud app deploy V2/app.yaml \
+              --quiet \
+              --verbosity=info \
+              --version=ci-${{ github.run_id }} \
+              --no-promote && break || sleep 10
+          done
