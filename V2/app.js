@@ -2,9 +2,20 @@ const express = require('express');
 const app = express();
 const path = require('path');
 
-app.set('view engine', 'ejs');
-app.use(express.static(path.join(__dirname, './views/static')));
+app.use((req, res, next) => {
+  const host = req.headers.host;
 
+  if (host && host.startsWith('www.')) {
+    return res.redirect(301, `https://${host.replace('www.', '')}${req.url}`);
+  }
+
+  next();
+});
+
+app.set('view engine', 'ejs');
+
+
+app.use(express.static(path.join(__dirname, './views/static')));
 
 app.get('/', function(req, res) {
     res.render('pages/home');
