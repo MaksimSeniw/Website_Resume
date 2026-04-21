@@ -2,11 +2,13 @@ const express = require('express');
 const app = express();
 const path = require('path');
 
+app.set('trust proxy', true);
+
 app.use((req, res, next) => {
-  const host = req.headers.host;
+  const host = req.get('host');
 
   if (host && host.startsWith('www.')) {
-    return res.redirect(301, `https://${host.replace('www.', '')}${req.url}`);
+    return res.redirect(301, `https://maksimseniw.com${req.originalUrl}`);
   }
 
   next();
