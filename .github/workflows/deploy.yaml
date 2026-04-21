@@ -19,8 +19,6 @@ jobs:
       - name: Setup gcloud
         uses: google-github-actions/setup-gcloud@v2
 
-      - run: sleep 10
-
       - name: Deploy
         run: |
           set -e

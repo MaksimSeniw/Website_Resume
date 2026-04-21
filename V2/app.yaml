@@ -10,8 +10,9 @@ handlers:
     static_dir: public
 
   - url: /.*
-    script: auto
     secure: always
+    redirect_http_response_code: 301
+    script: auto
 
 automatic_scaling:
   min_instances: 0

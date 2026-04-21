@@ -6,14 +6,19 @@ app.set('trust proxy', true);
 
 app.use((req, res, next) => {
   const host = req.get('host');
+  const proto = req.headers['x-forwarded-proto'];
 
   if (host && host.startsWith('www.')) {
     return res.redirect(301, `https://maksimseniw.com${req.originalUrl}`);
   }
 
+  // Redirect HTTP to HTTPS
+  if (proto && proto !== 'https') {
+    return res.redirect(301, `https://maksimseniw.com${req.originalUrl}`);
+  }
+
   next();
 });
-
 app.set('view engine', 'ejs');
 
 
