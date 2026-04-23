@@ -25,10 +25,10 @@ app.set('view engine', 'ejs');
 app.use(express.static(path.join(__dirname, './views/static')));
 
 app.get('/', function(req, res) {
-    res.render('pages/home');
+    res.render('pages/about');
   });
-  app.get('/home', function(req, res) {
-      res.render('pages/home');
+  app.get('/', function(req, res) {
+      res.render('pages/about');
     });
     app.get('/projects', function(req, res) {
       res.render('pages/projects');
