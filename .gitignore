@@ -1,2 +1,3 @@
 node_modules/
-images/
+V2/node_modules/
+V2/views/static/images/*
