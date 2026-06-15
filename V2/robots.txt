@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://maksimseniw.com/sitemap.xml

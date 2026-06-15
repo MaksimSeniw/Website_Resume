@@ -21,33 +21,37 @@ app.use((req, res, next) => {
 });
 app.set('view engine', 'ejs');
 
-
 app.use(express.static(path.join(__dirname, './views/static')));
 
 app.get('/', function(req, res) {
-    res.render('pages/about');
-  });
-  app.get('/', function(req, res) {
-      res.render('pages/about');
-    });
-    app.get('/projects', function(req, res) {
-      res.render('pages/projects');
-    });
-    app.get('/skills', function(req, res) {
-      res.render('pages/skills');
-    });
-    app.get('/v1', function(req, res) {
-      res.render('pages/v1');
-    });
-    app.get('/work', function(req, res) {
-      res.render('pages/work');
-    });
-    app.get('/resume', function(req, res) {
-      res.render('pages/resume');
-    });
-    app.get('/certifications', function(req, res) {
-      res.render('pages/certifications');
-    });
+  res.render('pages/about');
+});
+app.get('/projects', function(req, res) {
+  res.render('pages/projects');
+});
+app.get('/skills', function(req, res) {
+  res.render('pages/skills');
+});
+app.get('/v1', function(req, res) {
+  res.render('pages/v1');
+});
+app.get('/work', function(req, res) {
+  res.render('pages/work');
+});
+app.get('/resume', function(req, res) {
+  res.render('pages/resume');
+});
+app.get('/certifications', function(req, res) {
+  res.render('pages/certifications');
+});
+
+app.get('/sitemap.xml', (req, res) => {
+  res.sendFile(path.join(__dirname, 'sitemap.xml'));
+});
+
+app.get('/robots.txt', (req, res) => {
+  res.sendFile(path.join(__dirname, 'robots.txt'));
+});
 
 const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => {
